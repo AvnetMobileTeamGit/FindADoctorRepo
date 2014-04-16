@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D43F7D3218FD7C32003E63EF /* DoctorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D43F7D3018FD7C32003E63EF /* DoctorTableViewCell.m */; };
+		D43F7D3318FD7C32003E63EF /* DoctorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D43F7D3118FD7C32003E63EF /* DoctorTableViewCell.xib */; };
+		D43F7D4418FDAD32003E63EF /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = D43F7D4318FDAD32003E63EF /* Place.m */; };
+		D43F7D5818FDBEBC003E63EF /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = D43F7D5518FDBEBC003E63EF /* Doctor.m */; };
+		D43F7D5918FDBEBC003E63EF /* FileParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D43F7D5718FDBEBC003E63EF /* FileParser.m */; };
+		D43F7D6718FDC7F4003E63EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43F7D6618FDC7F4003E63EF /* Main.storyboard */; };
+		D43F7D6D18FDC859003E63EF /* 44-shoebox.png in Resources */ = {isa = PBXBuildFile; fileRef = D43F7D6918FDC859003E63EF /* 44-shoebox.png */; };
+		D43F7D6E18FDC859003E63EF /* 53-house.png in Resources */ = {isa = PBXBuildFile; fileRef = D43F7D6A18FDC859003E63EF /* 53-house.png */; };
+		D43F7D6F18FDC859003E63EF /* 172-pricetag.png in Resources */ = {isa = PBXBuildFile; fileRef = D43F7D6B18FDC859003E63EF /* 172-pricetag.png */; };
+		D43F7D7018FDC859003E63EF /* 192-credit-card.png in Resources */ = {isa = PBXBuildFile; fileRef = D43F7D6C18FDC859003E63EF /* 192-credit-card.png */; };
+		D43F7D7518FDC868003E63EF /* ByNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D43F7D7218FDC868003E63EF /* ByNameViewController.m */; };
+		D43F7D7618FDC868003E63EF /* BySpecialtyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D43F7D7418FDC868003E63EF /* BySpecialtyViewController.m */; };
+		D43F7D7B18FDC89B003E63EF /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D43F7D7818FDC89B003E63EF /* CustomButton.m */; };
+		D43F7D7C18FDC89B003E63EF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D43F7D7A18FDC89B003E63EF /* DetailViewController.m */; };
+		D43F7D8118FDC8AC003E63EF /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D43F7D7E18FDC8AC003E63EF /* MapViewController.m */; };
+		D43F7D8218FDC8AC003E63EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D43F7D8018FDC8AC003E63EF /* ViewController.m */; };
+		D43F7D8518FDC8ED003E63EF /* DoctorListView.m in Sources */ = {isa = PBXBuildFile; fileRef = D43F7D8418FDC8ED003E63EF /* DoctorListView.m */; };
+		D43F7D8718FDC94F003E63EF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D43F7D8618FDC94F003E63EF /* MapKit.framework */; };
+		D43F7D8918FDC964003E63EF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D43F7D8818FDC964003E63EF /* CoreLocation.framework */; };
+		D43F7D8C18FDDF4E003E63EF /* SearchObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D43F7D8B18FDDF4E003E63EF /* SearchObject.m */; };
+		D45215CC18F7293100D51195 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45215CB18F7293100D51195 /* Foundation.framework */; };
+		D45215CE18F7293100D51195 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45215CD18F7293100D51195 /* CoreGraphics.framework */; };
+		D45215D018F7293100D51195 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45215CF18F7293100D51195 /* UIKit.framework */; };
+		D45215D818F7293100D51195 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D45215D618F7293100D51195 /* InfoPlist.strings */; };
+		D45215DA18F7293100D51195 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D45215D918F7293100D51195 /* main.m */; };
+		D45215DE18F7293100D51195 /* CoreDataAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D45215DD18F7293100D51195 /* CoreDataAppDelegate.m */; };
+		D45215E118F7293100D51195 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D45215DF18F7293100D51195 /* CoreData.xcdatamodeld */; };
+		D45215E318F7293100D51195 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45215E218F7293100D51195 /* Images.xcassets */; };
+		D45215EA18F7293100D51195 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45215E918F7293100D51195 /* XCTest.framework */; };
+		D45215EB18F7293100D51195 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45215CB18F7293100D51195 /* Foundation.framework */; };
+		D45215EC18F7293100D51195 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45215CF18F7293100D51195 /* UIKit.framework */; };
+		D45215ED18F7293100D51195 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45215D118F7293100D51195 /* CoreData.framework */; };
+		D45215F518F7293100D51195 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D45215F318F7293100D51195 /* InfoPlist.strings */; };
+		D45215F718F7293100D51195 /* CoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D45215F618F7293100D51195 /* CoreDataTests.m */; };
+		D4919CDC18FDE392005DDEDA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45215D118F7293100D51195 /* CoreData.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D45215EE18F7293100D51195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D45215C018F7293100D51195 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D45215C718F7293100D51195;
+			remoteInfo = CoreData;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D43F7D2F18FD7C32003E63EF /* DoctorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorTableViewCell.h; sourceTree = "<group>"; };
+		D43F7D3018FD7C32003E63EF /* DoctorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorTableViewCell.m; sourceTree = "<group>"; };
+		D43F7D3118FD7C32003E63EF /* DoctorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoctorTableViewCell.xib; sourceTree = "<group>"; };
+		D43F7D4218FDAD32003E63EF /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		D43F7D4318FDAD32003E63EF /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
+		D43F7D5418FDBEBC003E63EF /* Doctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
+		D43F7D5518FDBEBC003E63EF /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
+		D43F7D5618FDBEBC003E63EF /* FileParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileParser.h; sourceTree = "<group>"; };
+		D43F7D5718FDBEBC003E63EF /* FileParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileParser.m; sourceTree = "<group>"; };
+		D43F7D6618FDC7F4003E63EF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D43F7D6918FDC859003E63EF /* 44-shoebox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "44-shoebox.png"; sourceTree = "<group>"; };
+		D43F7D6A18FDC859003E63EF /* 53-house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "53-house.png"; sourceTree = "<group>"; };
+		D43F7D6B18FDC859003E63EF /* 172-pricetag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "172-pricetag.png"; sourceTree = "<group>"; };
+		D43F7D6C18FDC859003E63EF /* 192-credit-card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "192-credit-card.png"; sourceTree = "<group>"; };
+		D43F7D7118FDC868003E63EF /* ByNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByNameViewController.h; sourceTree = "<group>"; };
+		D43F7D7218FDC868003E63EF /* ByNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ByNameViewController.m; sourceTree = "<group>"; };
+		D43F7D7318FDC868003E63EF /* BySpecialtyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BySpecialtyViewController.h; sourceTree = "<group>"; };
+		D43F7D7418FDC868003E63EF /* BySpecialtyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BySpecialtyViewController.m; sourceTree = "<group>"; };
+		D43F7D7718FDC89B003E63EF /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		D43F7D7818FDC89B003E63EF /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
+		D43F7D7918FDC89B003E63EF /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		D43F7D7A18FDC89B003E63EF /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		D43F7D7D18FDC8AC003E63EF /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		D43F7D7E18FDC8AC003E63EF /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		D43F7D7F18FDC8AC003E63EF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D43F7D8018FDC8AC003E63EF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D43F7D8318FDC8ED003E63EF /* DoctorListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorListView.h; sourceTree = "<group>"; };
+		D43F7D8418FDC8ED003E63EF /* DoctorListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorListView.m; sourceTree = "<group>"; };
+		D43F7D8618FDC94F003E63EF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D43F7D8818FDC964003E63EF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D43F7D8A18FDDF4E003E63EF /* SearchObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchObject.h; sourceTree = "<group>"; };
+		D43F7D8B18FDDF4E003E63EF /* SearchObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchObject.m; sourceTree = "<group>"; };
+		D45215C818F7293100D51195 /* CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D45215CB18F7293100D51195 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D45215CD18F7293100D51195 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D45215CF18F7293100D51195 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D45215D118F7293100D51195 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D45215D518F7293100D51195 /* CoreData-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreData-Info.plist"; sourceTree = "<group>"; };
+		D45215D718F7293100D51195 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D45215D918F7293100D51195 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D45215DB18F7293100D51195 /* CoreData-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreData-Prefix.pch"; sourceTree = "<group>"; };
+		D45215DC18F7293100D51195 /* CoreDataAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataAppDelegate.h; sourceTree = "<group>"; };
+		D45215DD18F7293100D51195 /* CoreDataAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataAppDelegate.m; sourceTree = "<group>"; };
+		D45215E018F7293100D51195 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		D45215E218F7293100D51195 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D45215E818F7293100D51195 /* CoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D45215E918F7293100D51195 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D45215F218F7293100D51195 /* CoreDataTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreDataTests-Info.plist"; sourceTree = "<group>"; };
+		D45215F418F7293100D51195 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D45215F618F7293100D51195 /* CoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D45215C518F7293100D51195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4919CDC18FDE392005DDEDA /* CoreData.framework in Frameworks */,
+				D43F7D8918FDC964003E63EF /* CoreLocation.framework in Frameworks */,
+				D43F7D8718FDC94F003E63EF /* MapKit.framework in Frameworks */,
+				D45215CE18F7293100D51195 /* CoreGraphics.framework in Frameworks */,
+				D45215D018F7293100D51195 /* UIKit.framework in Frameworks */,
+				D45215CC18F7293100D51195 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D45215E518F7293100D51195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D45215EA18F7293100D51195 /* XCTest.framework in Frameworks */,
+				D45215ED18F7293100D51195 /* CoreData.framework in Frameworks */,
+				D45215EC18F7293100D51195 /* UIKit.framework in Frameworks */,
+				D45215EB18F7293100D51195 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D43F7D2B18FD7BC4003E63EF /* DoctorListView */ = {
+			isa = PBXGroup;
+			children = (
+				D43F7D2F18FD7C32003E63EF /* DoctorTableViewCell.h */,
+				D43F7D3018FD7C32003E63EF /* DoctorTableViewCell.m */,
+				D43F7D3118FD7C32003E63EF /* DoctorTableViewCell.xib */,
+			);
+			name = DoctorListView;
+			sourceTree = "<group>";
+		};
+		D43F7D4018FDA6E7003E63EF /* Data Parser */ = {
+			isa = PBXGroup;
+			children = (
+				D43F7D5418FDBEBC003E63EF /* Doctor.h */,
+				D43F7D5518FDBEBC003E63EF /* Doctor.m */,
+				D43F7D5618FDBEBC003E63EF /* FileParser.h */,
+				D43F7D5718FDBEBC003E63EF /* FileParser.m */,
+			);
+			name = "Data Parser";
+			sourceTree = "<group>";
+		};
+		D43F7D6818FDC836003E63EF /* Navigation View */ = {
+			isa = PBXGroup;
+			children = (
+				D43F7D8318FDC8ED003E63EF /* DoctorListView.h */,
+				D43F7D8418FDC8ED003E63EF /* DoctorListView.m */,
+				D43F7D7D18FDC8AC003E63EF /* MapViewController.h */,
+				D43F7D7E18FDC8AC003E63EF /* MapViewController.m */,
+				D43F7D7F18FDC8AC003E63EF /* ViewController.h */,
+				D43F7D8018FDC8AC003E63EF /* ViewController.m */,
+				D43F7D7718FDC89B003E63EF /* CustomButton.h */,
+				D43F7D7818FDC89B003E63EF /* CustomButton.m */,
+				D43F7D7918FDC89B003E63EF /* DetailViewController.h */,
+				D43F7D7A18FDC89B003E63EF /* DetailViewController.m */,
+				D43F7D7118FDC868003E63EF /* ByNameViewController.h */,
+				D43F7D7218FDC868003E63EF /* ByNameViewController.m */,
+				D43F7D7318FDC868003E63EF /* BySpecialtyViewController.h */,
+				D43F7D7418FDC868003E63EF /* BySpecialtyViewController.m */,
+				D43F7D6918FDC859003E63EF /* 44-shoebox.png */,
+				D43F7D6A18FDC859003E63EF /* 53-house.png */,
+				D43F7D6B18FDC859003E63EF /* 172-pricetag.png */,
+				D43F7D6C18FDC859003E63EF /* 192-credit-card.png */,
+				D43F7D6618FDC7F4003E63EF /* Main.storyboard */,
+			);
+			name = "Navigation View";
+			sourceTree = "<group>";
+		};
+		D43F7D8D18FDDF55003E63EF /* ComponentObjects */ = {
+			isa = PBXGroup;
+			children = (
+				D43F7D4218FDAD32003E63EF /* Place.h */,
+				D43F7D4318FDAD32003E63EF /* Place.m */,
+				D43F7D8A18FDDF4E003E63EF /* SearchObject.h */,
+				D43F7D8B18FDDF4E003E63EF /* SearchObject.m */,
+			);
+			name = ComponentObjects;
+			sourceTree = "<group>";
+		};
+		D45215BF18F7293100D51195 = {
+			isa = PBXGroup;
+			children = (
+				D45215D318F7293100D51195 /* CoreData */,
+				D45215F018F7293100D51195 /* CoreDataTests */,
+				D45215CA18F7293100D51195 /* Frameworks */,
+				D45215C918F7293100D51195 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D45215C918F7293100D51195 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D45215C818F7293100D51195 /* CoreData.app */,
+				D45215E818F7293100D51195 /* CoreDataTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D45215CA18F7293100D51195 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D43F7D8818FDC964003E63EF /* CoreLocation.framework */,
+				D43F7D8618FDC94F003E63EF /* MapKit.framework */,
+				D45215CB18F7293100D51195 /* Foundation.framework */,
+				D45215CD18F7293100D51195 /* CoreGraphics.framework */,
+				D45215CF18F7293100D51195 /* UIKit.framework */,
+				D45215D118F7293100D51195 /* CoreData.framework */,
+				D45215E918F7293100D51195 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D45215D318F7293100D51195 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D43F7D8D18FDDF55003E63EF /* ComponentObjects */,
+				D43F7D6818FDC836003E63EF /* Navigation View */,
+				D43F7D4018FDA6E7003E63EF /* Data Parser */,
+				D43F7D2B18FD7BC4003E63EF /* DoctorListView */,
+				D45215DC18F7293100D51195 /* CoreDataAppDelegate.h */,
+				D45215DD18F7293100D51195 /* CoreDataAppDelegate.m */,
+				D45215E218F7293100D51195 /* Images.xcassets */,
+				D45215DF18F7293100D51195 /* CoreData.xcdatamodeld */,
+				D45215D418F7293100D51195 /* Supporting Files */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		D45215D418F7293100D51195 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D45215D518F7293100D51195 /* CoreData-Info.plist */,
+				D45215D618F7293100D51195 /* InfoPlist.strings */,
+				D45215D918F7293100D51195 /* main.m */,
+				D45215DB18F7293100D51195 /* CoreData-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D45215F018F7293100D51195 /* CoreDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				D45215F618F7293100D51195 /* CoreDataTests.m */,
+				D45215F118F7293100D51195 /* Supporting Files */,
+			);
+			path = CoreDataTests;
+			sourceTree = "<group>";
+		};
+		D45215F118F7293100D51195 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D45215F218F7293100D51195 /* CoreDataTests-Info.plist */,
+				D45215F318F7293100D51195 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D45215C718F7293100D51195 /* CoreData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D45215FA18F7293100D51195 /* Build configuration list for PBXNativeTarget "CoreData" */;
+			buildPhases = (
+				D45215C418F7293100D51195 /* Sources */,
+				D45215C518F7293100D51195 /* Frameworks */,
+				D45215C618F7293100D51195 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreData;
+			productName = CoreData;
+			productReference = D45215C818F7293100D51195 /* CoreData.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D45215E718F7293100D51195 /* CoreDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D45215FD18F7293100D51195 /* Build configuration list for PBXNativeTarget "CoreDataTests" */;
+			buildPhases = (
+				D45215E418F7293100D51195 /* Sources */,
+				D45215E518F7293100D51195 /* Frameworks */,
+				D45215E618F7293100D51195 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D45215EF18F7293100D51195 /* PBXTargetDependency */,
+			);
+			name = CoreDataTests;
+			productName = CoreDataTests;
+			productReference = D45215E818F7293100D51195 /* CoreDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D45215C018F7293100D51195 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CoreData;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					D45215E718F7293100D51195 = {
+						TestTargetID = D45215C718F7293100D51195;
+					};
+				};
+			};
+			buildConfigurationList = D45215C318F7293100D51195 /* Build configuration list for PBXProject "CoreData" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D45215BF18F7293100D51195;
+			productRefGroup = D45215C918F7293100D51195 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D45215C718F7293100D51195 /* CoreData */,
+				D45215E718F7293100D51195 /* CoreDataTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D45215C618F7293100D51195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D43F7D6D18FDC859003E63EF /* 44-shoebox.png in Resources */,
+				D43F7D6F18FDC859003E63EF /* 172-pricetag.png in Resources */,
+				D45215D818F7293100D51195 /* InfoPlist.strings in Resources */,
+				D43F7D6E18FDC859003E63EF /* 53-house.png in Resources */,
+				D43F7D6718FDC7F4003E63EF /* Main.storyboard in Resources */,
+				D45215E318F7293100D51195 /* Images.xcassets in Resources */,
+				D43F7D3318FD7C32003E63EF /* DoctorTableViewCell.xib in Resources */,
+				D43F7D7018FDC859003E63EF /* 192-credit-card.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D45215E618F7293100D51195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D45215F518F7293100D51195 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D45215C418F7293100D51195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D43F7D7B18FDC89B003E63EF /* CustomButton.m in Sources */,
+				D43F7D7518FDC868003E63EF /* ByNameViewController.m in Sources */,
+				D43F7D3218FD7C32003E63EF /* DoctorTableViewCell.m in Sources */,
+				D45215DA18F7293100D51195 /* main.m in Sources */,
+				D45215DE18F7293100D51195 /* CoreDataAppDelegate.m in Sources */,
+				D43F7D5918FDBEBC003E63EF /* FileParser.m in Sources */,
+				D43F7D4418FDAD32003E63EF /* Place.m in Sources */,
+				D45215E118F7293100D51195 /* CoreData.xcdatamodeld in Sources */,
+				D43F7D8218FDC8AC003E63EF /* ViewController.m in Sources */,
+				D43F7D7C18FDC89B003E63EF /* DetailViewController.m in Sources */,
+				D43F7D5818FDBEBC003E63EF /* Doctor.m in Sources */,
+				D43F7D7618FDC868003E63EF /* BySpecialtyViewController.m in Sources */,
+				D43F7D8518FDC8ED003E63EF /* DoctorListView.m in Sources */,
+				D43F7D8C18FDDF4E003E63EF /* SearchObject.m in Sources */,
+				D43F7D8118FDC8AC003E63EF /* MapViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D45215E418F7293100D51195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D45215F718F7293100D51195 /* CoreDataTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D45215EF18F7293100D51195 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D45215C718F7293100D51195 /* CoreData */;
+			targetProxy = D45215EE18F7293100D51195 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D45215D618F7293100D51195 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D45215D718F7293100D51195 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D45215F318F7293100D51195 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D45215F418F7293100D51195 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D45215F818F7293100D51195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D45215F918F7293100D51195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D45215FB18F7293100D51195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreData/CoreData-Prefix.pch";
+				INFOPLIST_FILE = "CoreData/CoreData-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D45215FC18F7293100D51195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreData/CoreData-Prefix.pch";
+				INFOPLIST_FILE = "CoreData/CoreData-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D45215FE18F7293100D51195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoreData.app/CoreData";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreData/CoreData-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CoreDataTests/CoreDataTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D45215FF18F7293100D51195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoreData.app/CoreData";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreData/CoreData-Prefix.pch";
+				INFOPLIST_FILE = "CoreDataTests/CoreDataTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D45215C318F7293100D51195 /* Build configuration list for PBXProject "CoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D45215F818F7293100D51195 /* Debug */,
+				D45215F918F7293100D51195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D45215FA18F7293100D51195 /* Build configuration list for PBXNativeTarget "CoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D45215FB18F7293100D51195 /* Debug */,
+				D45215FC18F7293100D51195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D45215FD18F7293100D51195 /* Build configuration list for PBXNativeTarget "CoreDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D45215FE18F7293100D51195 /* Debug */,
+				D45215FF18F7293100D51195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D45215DF18F7293100D51195 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D45215E018F7293100D51195 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = D45215E018F7293100D51195 /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D45215C018F7293100D51195 /* Project object */;
+}
